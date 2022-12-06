@@ -1,0 +1,29 @@
+Host socrates
+    HostName 99.250.29.1
+    User atlas
+    IdentityFile ./ssh/socrates
+
+Host can1
+    HostName 18.134.7.158
+    User ubuntu
+    IdentityFile ./ssh/KETS-BaSQuaNa_AWS-UK-1.pem
+
+Host can2
+    HostName 18.134.11.83
+    User ubuntu
+    IdentityFile ./ssh/KETS-BaSQuaNa_AWS-UK-1.pem
+
+Host can3
+    HostName 3.8.162.189
+    User ubuntu
+    IdentityFile ./ssh/KETS-BaSQuaNa_AWS-UK-1.pem
+
+Host uk1
+    HostName 13.40.144.163
+    User ubuntu
+    IdentityFile ./ssh/KETS-BaSQuaNa_AWS-UK-1.pem
+
+Host uk2
+    HostName 35.178.178.100
+    User ubuntu
+    IdentityFile ./ssh/KETS-BaSQuaNa_AWS-UK-1.pem

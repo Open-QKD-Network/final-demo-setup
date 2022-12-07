@@ -19,7 +19,7 @@ done
 for s in can1 can2 can3 uk1 uk2
 do
     echo -e "\nWaiting for network to start on ${s}..."
-    ssh -F ./ssh/config can1 'bash -s' < ./scripts/wait-lsrp.sh
+    ssh -F ./ssh/config ${s} 'bash -s' < ./scripts/wait-lsrp.sh
 done
 
 echo -e "\nVerifying network configuration is correct..."

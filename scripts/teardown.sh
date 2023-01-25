@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd ~/build-cqptoolkit
-./tearDownTest.sh
+./stopTest.sh
 
 rm -rf ~/.qkd/kms/pools
 rm -rf ~/.qkd/qnl/otp/keys

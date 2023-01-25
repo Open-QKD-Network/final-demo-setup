@@ -27,3 +27,8 @@ Host uk2
     HostName 35.178.178.100
     User ubuntu
     IdentityFile ./ssh/KETS-BaSQuaNa_AWS-UK-1.pem
+
+Host aws6
+    HostName 3.8.186.184
+    User ubuntu
+    IdentityFile ./ssh/KETS-BaSQuaNa_AWS-UK-1.pem

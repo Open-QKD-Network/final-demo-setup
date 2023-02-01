@@ -9,7 +9,7 @@ do
     echo "Complete!"
 done
 
-for s in uk1 uk2 aws6
+for s in uk1 uk2
 do
     echo -e "\nTearing down existing network and running openqkd on ${s}"
     ssh -F ./ssh/config ${s} 'bash -s' < ./scripts/setup-network-uk.sh
@@ -40,7 +40,7 @@ ssh -F ./ssh/config can3 'bash -s' < ./scripts/setup-satellite.sh
 echo "Complete!"
 
 echo -e "\nSetting up dummy drivers..."
-for s in "can1 A" "can2 B" "can3 C" "uk1 D" "uk2 E" "aws6 F"
+for s in "can1 A" "can2 B" "can3 C" "uk1 D" "uk2 E"
 do
     echo -e "\nStarting dummy drivers on node ${s}"
     set -- $s # convert tuple to args
@@ -49,7 +49,7 @@ do
 done
 
 echo -e "\nStarting dashboard backends..."
-for s in "can1 A" "can2 B" "can3 C" "uk1 D" "uk2 E" "aws6 F"
+for s in "can1 A" "can2 B" "can3 C" "uk1 D" "uk2 E"
 do
     echo -e "\nStarting dashboard aws on node ${s}"
     set -- $s # convert tuple to args
